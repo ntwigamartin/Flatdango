@@ -1,0 +1,16 @@
+{
+  "name": "flatdango",
+  "version": "1.0.0",
+  "description": "A Real Estate Web App",
+  "main": "js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "node"
+  ],
+  "author": "Martin Ntwiga",
+  "license": "ISC"
+}
