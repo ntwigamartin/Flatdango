@@ -45,7 +45,9 @@ function getFilms() {
     fetch(allFilms).then(res=>res.json())
     .then(films=>{
         films.forEach(films => {
-            let listItem1 = document.createElement('li')
+            let listItem1 = document.createElement('a')
+            listItem1.href="#"
+            listItem1.classList="list-group-item list-group-item-action list-group-item-danger fs-2 fw-bold"
             listItem1.innerHTML = `${films.title}`
             movielist.appendChild(listItem1)
 
