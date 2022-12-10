@@ -5,8 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flatdango</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Welcome To Flatiron School Movie Theater</a>
+        </div>
+    </nav>
+    <div class="container mt-2" id="main-container">
+        <div class="card col-12">
+            <div class="row">
+                <div class="card col-5">
+                    <div class="card-header">
+                      Featured Movies
+                    </div>
+                    <ul class="list-group list-group-flush" id="movie-list">
+                    </ul>
+                </div>
+                <div class="card ms-5 col-6">
+                    <img  class="card-img-top" id="img">
+                    <div class="card-body">
+                      <h3 class="card-title"></h3>
+                      <p class="card-text"></p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item" id="l1"></li>
+                      <li class="list-group-item" id="l2"></li>
+                      <li class="list-group-item" id="l3"></li>
+                    </ul>
+                    <div class="card-body">
+                      <button type="button" class="btn btn-success" id="btn">Buy Ticket</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- style="width: 25rem;" -->
+
+
+
+
+
+
+    <script type="text/javascript" src="./js/index.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.js"></script>
 </body>
 </html>
