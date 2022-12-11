@@ -43,14 +43,16 @@ function getFilms() {
 
                 let availableTickets = films[0].capacity - films[0].tickets_sold
                 l3.innerHTML = "Available Tickets: " + availableTickets
+                btn.innerHTML = "Buy Ticket"
 
                 btn.addEventListener("click", (e)=>{
                     if(availableTickets > 0) {
                         --availableTickets
                         l3.innerHTML = "Available Tickets: " + availableTickets
+                        btn.innerHTML = "Buy Ticket"
                     }
                     else{
-                        l3.innerHTML = "Available Tickets: " + "Sold Out"
+                        btn.innerHTML = "Sold Out"
                     }
                     
                 })
@@ -67,14 +69,18 @@ function getFilms() {
 
                 let availableTickets = films.capacity - films.tickets_sold
                 l3.innerHTML = "Available Tickets: " + availableTickets
+                btn.innerHTML = "Buy Ticket"
 
                 btn.addEventListener("click", (e)=>{
                     if(availableTickets > 0) {
                         --availableTickets
                         l3.innerHTML = "Available Tickets: " + availableTickets
+                        btn.innerHTML = "Buy Ticket"
                     }
                     else{
-                        l3.innerHTML = "Available Tickets: " + "Sold Out"
+                        btn.innerHTML = "Sold Out"
+                        listItem1.classList.add("sold-out");
+                        //l3.innerHTML = "Available Tickets: " + "Sold Out"
                     }
                     
                 })
