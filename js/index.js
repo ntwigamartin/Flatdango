@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
 })
 
 //Global variables
-const allFilms = "http://localhost:3000/films";
+const allFilms = "https://ntwigamartin.github.io/Flatdango-data/db.json";
 const movielist = document.getElementById("movie-list")
 const moviePoster =document.getElementById("img")
 const h3 = document.querySelector(".card-title")
@@ -22,8 +22,8 @@ img.style="height: 65rem;"
 //Get Movies
 function getFilms() {
     fetch(allFilms).then(res=>res.json())
-    .then(films=>{
-        films.forEach(films => {
+    .then(data=>{
+        data.films.forEach(films => {
             
             //Display Movie Menu
             let listItem1 = document.createElement('a')
@@ -34,14 +34,14 @@ function getFilms() {
             //Display first movie on the menu when page loads
             fetch(allFilms)
             .then(res=>res.json())
-            .then(films=>{
-                moviePoster.src = films[0].poster
-                h3.innerHTML = films[0].title
-                p.innerHTML = films[0].description
-                l1.innerHTML = "Runtime: " + films[0].runtime
-                l2.innerHTML = "Showtime: " + films[0].showtime
+            .then(data=>{
+                moviePoster.src = data.films[0].poster
+                h3.innerHTML = data.films[0].title
+                p.innerHTML = data.films[0].description
+                l1.innerHTML = "Runtime: " + data.films[0].runtime
+                l2.innerHTML = "Showtime: " + data.films[0].showtime
 
-                let availableTickets = films[0].capacity - films[0].tickets_sold
+                let availableTickets = data.films[0].capacity - data.films[0].tickets_sold
                 l3.innerHTML = "Available Tickets: " + availableTickets
                 btn.innerHTML = "Buy Ticket"
 
