@@ -4,25 +4,15 @@
 This is an app where you can purchase a ticket of your favourite movie to watch at <br>the Flatiron movie theater
 
 ## Requirements
-* Text editor e,g Vs code
 * Browser e.g Chrome
-* json-Server
 
-## Installation
-* Clone the app to your local repository using the following;
 
-        git@github.com:ntwigamartin/Flatdango.git
-
-* Using the following command to open it on vs code.
-
-        code .
-* On vs code terminal, run the following command to get the backend started:
-
-        json-server --watch db.json
-
-## Running the App
-* Open the index.html file with your browser e.g Chrome
-* Select your favourite movie from the featured movie list and click on <br>the button (Buy ticket) to purchase a movie ticket.
+## Using the app
+* Follow this [link](https://ntwigamartin.github.io/Flatdango/) to start the web app.
+* Featured movies are listed on the left side of the landing page.
+* Clicking on a movie item populates the movie details on the right side of the page including the movie poster, description, available tickets etc.
+* You can purchase a movie ticket by clicking the green button(Buy ticket) if there are available tickets.
+* Clicking the buy ticket button when there are no available tickets, the button text changes to 'sold out' to let you know that all the movie tickets have been sold.
 
 ## App Screenshot
 <img src="./images/img 4.png">
